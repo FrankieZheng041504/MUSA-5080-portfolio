@@ -2,7 +2,7 @@
 title: "week-02"
 editor: visual
 ------
-title: "Week 2: Census Data"
+title: "Week 2: Cnsus Data"
 description: "One line about this page."
 date: 2026-09-05
 ---
