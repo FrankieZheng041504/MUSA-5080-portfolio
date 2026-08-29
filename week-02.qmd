@@ -1,0 +1,13 @@
+---
+title: "week-02"
+editor: visual
+------
+title: "Week 2: Census Data"
+description: "One line about this page."
+date: 2026-09-05
+---
+
+## Notes
+
+This is a placeholder for Week 2. I will add content later.
+---
