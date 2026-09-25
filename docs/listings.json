@@ -2,7 +2,8 @@
   {
     "listing": "/assignments/index.html",
     "items": [
-      "/assignments/assignment2 .html"
+      "/assignments/assignment2 .html",
+      "/assignments/assignment3.html"
     ]
   },
   {
@@ -10,6 +11,13 @@
     "items": [
       "/weekly-notes/week-02.html",
       "/weekly-notes/week-01.html"
+    ]
+  },
+  {
+    "listing": "/assignments/Assignment1.html",
+    "items": [
+      "/assignments/assignment2 .html",
+      "/assignments/assignment3.html"
     ]
   }
 ]
