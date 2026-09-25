@@ -1,6 +1,6 @@
 ---
-title: "Verify the Claim: poverty and inequality in Philadelphia neighborhoods"
-subtitle: "Testing a published claim about neighborhood change against the data behind it"
+title: "Assignment 3: Verify the Claim"
+subtitle: "poverty and inequality in Philadelphia neighborhoods"
 author: "Frankie zheng"
 date: today
 format:
