@@ -23,7 +23,7 @@ Landscape design, and I'm interested in using spatial data to understand urban i
 ## What You'll Find Here
 
 - **[Weekly Notes](weekly-notes/index.qmd)** — what I'm learning each week
-- **[Assignments](assignments/index.qmd)** — analyses completed for the course
+- **[Assignments](assignments/Assignment1.qmd)** — analyses completed for the course
 - **[About](about.qmd)** — more background and how to reach me
 
 ## Get in Touch
