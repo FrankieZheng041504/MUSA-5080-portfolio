@@ -52,10 +52,8 @@ library(tidyverse)
 library(tidycensus)
 library(sf)
 library(caret)
-
-options(readr.show_progress = FALSE)
-options(progress_enabled = FALSE)
-options(progressr.enable = FALSE)
+options(readr.show_progress = FALSE) 
+options(tigris_use_cache = TRUE)  
 
 Sys.getenv("CENSUS_API_KEY") != ""
 ```
@@ -138,7 +136,8 @@ philly_tracts <- get_acs(
   ),
   year = 2023,
   output = "wide",
-  geometry = TRUE
+  geometry = TRUE,
+  cache_table = TRUE 
 ) %>%
   st_transform(2272)
 ```
@@ -674,6 +673,7 @@ Answer in prose, drawing on your model log (incorporate our words of the day for
 4. **How much of the remaining error might be uncertainty or statistical noise?** Use your last plot.
 
 *Your answer:*
+
 1. What helped, and what didn't?
 The squared distance to City Hall helped the most, lowering CV RMSE from 5.22 to 5.03. It captured the non-linear decay of commute times as you move away from the urban core. SEPTA density and Indego distance disappointed—they slightly worsened CV RMSE. This is likely because they measure infrastructure presence rather than actual travel speed, and they overlap with the central-city variables already in the model.
 
@@ -687,7 +687,4 @@ Looking at the final residual map, orange clusters remain in Northeast Philadelp
 The fog plot shows a clear upward trend: tracts with higher CV in their commute-time estimate also tend to have larger model errors. This suggests that a substantial share of the remaining error is ACS sampling noise rather than model failure, especially in smaller or more variable tracts.
 ---
 
-## Submitting
-
-Render this document to HTML and submit the link on Canvas by Friday, October 16. I'll miss you all terribly while I'm away. Please send letters or correspondences to my office mailbox. 
 
