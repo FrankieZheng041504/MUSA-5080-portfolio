@@ -479,6 +479,7 @@ ggplot(diagnostics, aes(factor(income_quartile), ratio)) +
   coord_cartesian(ylim = c(0.2, 2.5)) +
   labs(x = "Neighborhood income quartile (1 = lowest)",
        y = "Predicted value / sale price")
+library(patchwork)
 ```
 
 The lowest-income quartile has a median ratio of **`r round(ratio_by_income$median_ratio[1], 3)`**, with **`r round(ratio_by_income$pct_overvalued[1], 1)`%** of sales over-valued. The highest-income quartile's median ratio is **`r round(ratio_by_income$median_ratio[4], 3)`**. The original cleaning rules remove some implausible low-price transactions but do not remove differences in housing quality and market conditions relevant to *The Tax Divide*.
