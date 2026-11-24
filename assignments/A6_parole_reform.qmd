@@ -267,7 +267,7 @@ rates_long <- rates_df %>%
 ggplot(rates_long, aes(x = threshold, y = value, color = metric)) +
   geom_line(size = 1.2) +
   geom_point() +
-  scale_color_manual(values = c("sensitivity" = "green", "specificity" = "grey")) +
+  scale_color_manual(values = c("sensitivity" = "yellow", "specificity" = "grey")) +
   labs(
     title = "Sensitivity and Specificity by Threshold",
     x = "Threshold", 
